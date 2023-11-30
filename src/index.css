@@ -1,5 +1,7 @@
 @import '../node_modules/modern-normalize/modern-normalize.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+
 :root {
     --color-bg: #1f1f38;
     --color-bg-variant: #2c2c6c;
@@ -14,9 +16,46 @@
 }
 
 html {
+    font-size: 10px;
     scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+body {
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-white);
+    line-height: 1.7rem;
+}
+
+/* Basic style */
+
+.container {
+    width: var(--container-width-lg);
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+section {
+    margin-top: 8px;
+}
+
+section>h2,
+section>h5 {
+    text-align: center;
+    color: var(--color-light);
 }
